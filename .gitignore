@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 构建产物
+build/
+dist/
+*.spec
+telegram_checkin/_icon_render.html
+
+# 本机配置（含绝对路径，不入库）
+telegram_checkin.config.json
+local.config.json
+.telegram_checkin.json
+
+# 敏感：会话 / 记录 / 日志 / 工作目录
+.signer/
+*.session
+*.session_string
+*.sqlite3
+*.log
+logs/
+
+# 编辑器
+.vscode/
+.idea/

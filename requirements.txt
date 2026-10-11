@@ -1,0 +1,9 @@
+# Telegram 侧：实际发送签到指令的工具（含 WebUI / YAML / 加速依赖）
+tg-signer[gui,speedup,yaml]
+
+# 定位 Windows 托盘图标、读取托盘菜单（纯 Python，打包时需要）
+uiautomation>=2.0.29
+
+# 以下仅打包 exe / 生成图标时需要
+pyinstaller>=6.22
+pillow>=12.0

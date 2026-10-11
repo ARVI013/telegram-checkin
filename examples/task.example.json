@@ -1,0 +1,21 @@
+{
+  "name": "daily_checkin",
+  "time": "06:00",
+  "enabled": true,
+  "manage_clash": true,
+  "stop_clash_after": true,
+  "close_clash_always": true,
+  "step_interval": 30,
+  "steps": [
+    {
+      "chat_id": "@YourBotA",
+      "label": "BotA",
+      "command": "/checkin"
+    },
+    {
+      "chat_id": 1234567890,
+      "label": "BotB",
+      "command": "📅 每日签到"
+    }
+  ]
+}
