@@ -4,6 +4,16 @@ Windows 上的 Telegram 自动签到小工具：**图形界面管理任务（每
 
 它自己不做 Telegram 通信，而是编排成熟工具 [tg-signer](https://github.com/amchii/tg-signer)（BSD-3）来发消息，本仓库只负责"什么时候发、发之前网络要通、发之后把 Clash 收干净"。
 
+## 演示
+
+| ① 测试 TG 网络连通性 | ② 完整跑一次任务 | ③ 托盘优雅退出 Clash |
+| --- | --- | --- |
+| ![测试TG网络连通性](docs/demo-network-check.gif) | ![完整跑一次任务](docs/demo-run-task.gif) | ![托盘退出](docs/demo-tray-exit.gif) |
+| 只验证「代理 → 节点 → Telegram」，必要时临时拉起 Clash，测完恢复原状 | 点「发送检测指令」＝ 立刻完整跑一遍：预检 → 发指令（间隔 30s）→ 托盘退出 Clash | 右键托盘图标 → 点「退出」，不走 taskkill，系统代理不会被留成悬空状态 |
+
+> 动图为实拍（鼠标指针是录屏时补画的），文件在 `docs/` 下；`run-once` 的登录阶段会打印账号最近对话，因此录制时已跳过该阶段。
+
+
 ---
 
 ## 功能
